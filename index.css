@@ -6,11 +6,23 @@
   min-width: 400px;
 }
 
+#titleName {
+  color: #6DB3F2;
+  font-size: 1.5rem;
+}
+
+#title-p {
+  color: #bcbebf;
+  margin-bottom: 15px;
+}
+
+
 input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #6DB3F2;
+  margin-top: 15px;
   margin-bottom: 4px;
 }
 
@@ -19,7 +31,13 @@ button {
   color: white;
   font-weight: bold;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #6DB3F2;
+
+}
+
+#delete-btn {
+  background: white;
+  color: #6DB3F2;
 
 }
 
