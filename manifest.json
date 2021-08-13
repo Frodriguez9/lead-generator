@@ -1,12 +1,13 @@
 {
     "manifest_version": 3,
     "version": "1.0",
-    "name": "Leads tracker",
+    "name": "LeadBox",
+    "description": "Save the website and contact info of your leads in your browser and share it across multiple divices",
     "action": {
-        "default_popup": "index.html",
+        "default_popup": "popup.html",
         "default_icon": "lead-icon.png"
     },
-    "permissions": [
-      "tabs"
-    ]
+    "permissions": ["tabs", "activeTab", "scripting", "storage",
+                    "action"],
+    "icons": {"128":"lead-icon.png"}
 }
