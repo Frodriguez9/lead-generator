@@ -4,10 +4,35 @@
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 400px;
+  min-height: 200px;
+}
+
+.header {
+  position: sticky; top: 0px;
+  background: white;
+}
+
+.bg-light {
+  background: #E8FCCF;
+}
+
+.donate-div {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+
 }
 
 #titleName {
-  color: #6DB3F2;
+  color: #3DA35D;
   font-size: 1.5rem;
 }
 
@@ -16,36 +41,40 @@
   margin-bottom: 15px;
 }
 
+#donate-cta {
+  text-align: center;
+}
+
 
 input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #6DB3F2;
+  border: 1px solid #3DA35D;
   margin-top: 15px;
   margin-bottom: 4px;
 }
 
 button {
-  background: #6DB3F2;
+  background: #3DA35D;
   color: white;
   font-weight: bold;
   padding: 10px 20px;
-  border: 1px solid #6DB3F2;
+  border: 1px solid #3DA35D;
 
 }
 
-#delete-btn {
+.secondary-btn {
   background: white;
-  color: #6DB3F2;
+  color: #3DA35D;
 
 }
 
 ul {
-  color: #6DB3F2;
+  color: #3DA35D;
   list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
+  padding: 10px;
+  margin-top: 1px;
 }
 
 li {
@@ -53,5 +82,5 @@ li {
 }
 
 a {
-  color: #6DB3F2;
+  color: #3DA35D;
 }

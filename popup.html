@@ -8,22 +8,40 @@
   <body>
 
     <div class="main-div">
-      <p id="title-p"><b id="titleName">LeadBox </b>for Chrome</p>
-      <hr>
+      <div class="header">
+        <p id="title-p"><b id="titleName">LeadBox </b>for Chrome</p>
+        <hr>
 
-      <input type="text" placeholder="Add URL" id="input-el">
-      <button id="input-btn">SAVE INPUT</button>
-      <button id="tab-btn">SAVE TAB</button>
-      <button id="delete-btn">DELETE ALL</button>
+        <input type="text" placeholder="Type your lead's name or click SAVE TAB to scan page" id="input-el">
+        <button id="input-btn">SAVE INPUT</button>
+        <button id="tab-btn">SAVE TAB</button>
+        <button id="delete-btn" class="secondary-btn">DELETE ALL</button>
+      </div>
 
-      <ul id="ul-el"></ul>
-
+      <div id="contact-list-div"> </div>
 
     </div>
 
+    <div id="footer-div" class="donate-div">
+      <p id="donate-cta">
+        Finding LeadBox useful? <br>
+        Help us make it even more powerful. <br>
+        Consider making a Donation!
+      </p>
+      <div class="donate-div">
+        <button id="donate-btn">DONATE</button>
+        <!--
+        <button id="about-btn" class="secondary-btn">ABOUT</button>
+      -->
+      </div>
+    </div>
+
     <script src="index.js">  </script>
-    <script src="backend/delete.js">  </script>
-    <script src="backend/input.js">  </script>
-    <script src="backend/tab.js">  </script>
+    <script src="frontend/delete.js">  </script>
+    <script src="frontend/input.js">  </script>
+    <script src="frontend/tab.js">  </script>
+    <script src="frontend/render-list.js">  </script>
+    <script src="frontend/footer/donate.js">  </script>
+
   </body>
 </html>

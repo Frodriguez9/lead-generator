@@ -7,7 +7,6 @@
         "default_popup": "popup.html",
         "default_icon": "lead-icon.png"
     },
-    "permissions": ["tabs", "activeTab", "scripting", "storage",
-                    "action"],
+    "permissions": ["tabs", "activeTab", "scripting", "storage"],
     "icons": {"128":"lead-icon.png"}
 }

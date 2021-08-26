@@ -25,8 +25,13 @@ tabBtn.addEventListener("click", async () => {
     target:{tabId: tab.id},
     function: grabPhones,
   });
-
-  newLead.phones = phones
+  // filters out repeated numbers that can be hidden in the DOM
+  if (phones.result) {
+    newLead.phones = phones.result.filter((phone, index, arr) => {
+      const uniquePhone = (phone !== arr[index+1])? phone : null
+      return uniquePhone
+    })
+  }
 
   myLeads.push(newLead)
   render(myLeads)
@@ -46,7 +51,7 @@ tabBtn.addEventListener("click", async () => {
 */
 
 function grabPhones() {
-  const phoneRegEx = /(?:\d{3}|\(\d{3}\))([-\/\.\n])\d{3}\1\d{4}/g
+  const phoneRegEx = /\(?([2-9][0-8][0-9])\)?[\s-\.]([2-9][0-9]{2})[\s-\.]([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?/g
   const body = document.body.innerHTML
   return body.match(phoneRegEx)
 }
