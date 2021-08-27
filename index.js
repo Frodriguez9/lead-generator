@@ -1,4 +1,3 @@
-
 let myLeads = []
 let newLead = {  // used across bottons
   href:null,

@@ -1,12 +1,20 @@
 {
     "manifest_version": 3,
-    "version": "1.0",
+    "content_security_policy.extension_pages": {
+      "script-src": "self https://ssl.google-analytics.com",
+       "object-src": "self"
+      },
+    "permissions": ["tabs", "activeTab", "scripting", "storage"],
     "name": "LeadBox",
-    "description": "Save the website and contact info of your leads in your browser and share it across multiple divices",
+    "version": "1.0",
+    "description": "Save your leads in your browser and share it across multiple divices",
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "lead-icon.png"
+        "default_icon": {
+          "64": "frontend/images/LeadBox_original_0.5x.png",
+          "96": "frontend/images/LeadBox_original_0.75x.png",
+          "128": "frontend/images/LeadBox_original_.png"
+        }
     },
-    "permissions": ["tabs", "activeTab", "scripting", "storage"],
-    "icons": {"128":"lead-icon.png"}
+    "icons": {"128": "frontend/images/LeadBox_original_.png"}
 }
