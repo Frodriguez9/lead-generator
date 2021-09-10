@@ -12,7 +12,7 @@ function render(leads){
       phones.forEach(phone => listOfPhones += `<li><a href="tel:${phone}" target="_blank">${phone}</a></li>`)
     }
 
-    const ul = (i%2 === 0)? '<ul id="ul-el">' : '<ul class="bg-light" id="ul-el">'
+    const ul = (i%2 === 0)? '<ul class="bg-light" id="ul-el">' : '<ul id="ul-el">'
 
     listOfHTMLitems += `
           ${ul}
