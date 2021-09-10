@@ -20,6 +20,7 @@ function resetLead(){
 
 // Where we will expose all the data we retrieve from storage.sync.
 let leadsFromSyncStorage = {}
+
 // Asynchronously retrieve data from storage.sync, then cache it.
 const initStorageCache = getAllStorageSyncData().then(items => {
   // Copy the data retrieved from storage into leadsFromSyncStorage.
