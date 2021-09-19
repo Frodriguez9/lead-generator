@@ -2,7 +2,8 @@ let myLeads = []
 let newLead = {  // used across bottons
   href:null,
   hostName:null,
-  phones:[] // set to an array when assigned
+  phones:[],
+  emails:[]
 }
 
 /*
@@ -13,7 +14,8 @@ function resetLead(){
   return {
     href:null,
     hostName:null,
-    phones:[]
+    phones:[],
+    emails:[]
   }
 }
 

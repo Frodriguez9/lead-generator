@@ -11,15 +11,24 @@
   <body>
 
     <header class="hero">
+      <div class="container container-brand">
+        <div class="logo-container">
+          <img src="frontend/images/LeadBox_original_0.5x.png" alt="LeadBox Logo">
+        </div>
+        <div class="brand-container">
+          <h1>LeadBox <span class="sm-text-grey">for Chrome</span></h1>
+        </div>
+      </div> <!-- end container flex -->
+
       <div class="container">
-        <p id="title-p"><b id="titleName">LeadBox </b>for Chrome</p>
-        <hr>
-        <input type="text" placeholder="Type your lead's name or click SAVE TAB to scan page" id="input-el">
+        <input class="input-block" id="input-el" type="text" placeholder="Type your lead's name or click SAVE TAB to scan page">
         <button id="input-btn">SAVE INPUT</button>
         <button id="tab-btn">SAVE TAB</button>
         <button id="delete-btn" class="secondary-btn">DELETE ALL</button>
       </div>
     </header>
+
+
 
     <section id="sec-list">
       <div class="container" id="contact-list-div"> </div>
@@ -35,6 +44,8 @@
         <button id="donate-btn">DONATE</button>
       </div>
     </section>
+
+
 
     <script src="index.js">  </script>
     <script src="frontend/delete.js">  </script>
