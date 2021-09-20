@@ -9,9 +9,8 @@
   </head>
 
   <body>
-
     <header class="hero">
-      <div class="container container-brand">
+      <div class="container columns brand-box">
         <div class="logo-container">
           <img src="frontend/images/LeadBox_original_0.5x.png" alt="LeadBox Logo">
         </div>
@@ -21,18 +20,24 @@
       </div> <!-- end container flex -->
 
       <div class="container">
-        <input class="input-block" id="input-el" type="text" placeholder="Type your lead's name or click SAVE TAB to scan page">
-        <button id="input-btn">SAVE INPUT</button>
-        <button id="tab-btn">SAVE TAB</button>
-        <button id="delete-btn" class="secondary-btn">DELETE ALL</button>
+        <input class="input input-search" id="search-el" type="text" placeholder="Search">
+        <input class="input" id="input-el" type="text" placeholder="Type your lead's name or click SAVE TAB to scan page">
+        <button class="first-btn" id="input-btn">SAVE INPUT</button>
+        <button class="first-btn" id="tab-btn">SAVE TAB</button>
+        <button class="second-btn" id="delete-btn">DELETE ALL</button>
       </div>
     </header>
 
 
 
     <section id="sec-list">
-      <div class="container" id="contact-list-div"> </div>
+      <div class="container">
+        <table class="table" id="contact-list-div"></table>
+      </div>
     </section>
+
+
+
 
     <section class="text-center">
       <div class="element-center" id="footer-div">
@@ -45,14 +50,12 @@
       </div>
     </section>
 
-
-
     <script src="index.js">  </script>
     <script src="frontend/delete.js">  </script>
     <script src="frontend/input.js">  </script>
     <script src="frontend/tab.js">  </script>
     <script src="frontend/render-list.js">  </script>
     <script src="frontend/footer/donate.js">  </script>
-
+    <script src="frontend/search.js">  </script>
   </body>
 </html>

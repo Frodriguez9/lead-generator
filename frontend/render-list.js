@@ -1,7 +1,11 @@
-const contactListDivEl = document.getElementById("contact-list-div")
+const leadsTable = document.getElementById("contact-list-div")
 
 function render(leads){
-  let listOfHTMLitems = ""
+  let listOfHTMLitems = ` <tr>
+                            <th>Website</th>
+                            <th>Phones</th>
+                          </tr>`
+
   for (let i=0; i < leads.length; i++) {
     const href = (leads[i].href)? leads[i].href : ''
     const hostName = (leads[i].hostName)? leads[i].hostName : ''
@@ -9,20 +13,16 @@ function render(leads){
 
     let listOfPhones = ``
     if (phones !== ''){
-      phones.forEach(phone => listOfPhones += `<li><a href="tel:${phone}" target="_blank">${phone}</a></li>`)
+      phones.forEach(phone => listOfPhones += `<a href="tel:${phone}" target="_blank">${phone}</a> <br>`)
     }
 
-    const ul = (i%2 === 0)? '<ul class="bg-light" id="ul-el">' : '<ul id="ul-el">'
 
     listOfHTMLitems += `
-          ${ul}
-            <li>
-                <a href="${href}" target="_blank">${hostName}</a>
-                <ul>
-                ${listOfPhones}
-                </ul>
-            </li>
-          </ul>`
+          <tr>
+            <td><a href="${href}" target="_blank">${hostName}</a></td>
+            <td>${listOfPhones}</td>
+          </tr>
+        `
   };
-    contactListDivEl.innerHTML = listOfHTMLitems;
+    leadsTable.innerHTML = listOfHTMLitems;
 }

@@ -105,7 +105,7 @@ tabBtn.addEventListener("click", async () => {
   //   })
   // }
 
-  myLeads.push(newLead)
+  myLeads.unshift(newLead)
   render(myLeads)
   chrome.storage.sync.set({leads:myLeads}, function() {
   //console.log(myLeads)
