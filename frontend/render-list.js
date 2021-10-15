@@ -1,7 +1,7 @@
 const leadsTable = document.getElementById("contact-list-div")
 
 function render(leads){
-  let listOfHTMLitems = ` <tr>
+  let listOfHTMLitems = ` <tr class="table-row-head">
                             <th>Website</th>
                             <th>Phones</th>
                           </tr>`

@@ -7,7 +7,7 @@
       },
     "permissions": ["activeTab", "scripting", "storage"],
     "name": "LeadBox",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Save all leads in a single place and share it across multiple devices",
     "action": {
         "default_popup": "popup.html",

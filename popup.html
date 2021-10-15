@@ -9,46 +9,42 @@
   </head>
 
   <body>
-    <header class="hero">
-      <div class="container columns brand-box">
-        <div class="logo-container">
-          <img src="frontend/images/LeadBox_original_0.5x.png" alt="LeadBox Logo">
+    <div class="container">
+      <header class="hero">
+        <div class="columns container-brand">
+          <div class="col">
+            <img src="frontend/images/LeadBox_original_0.5x.png" alt="LeadBox Logo">
+          </div>
+          <div class="col">
+            <h1>LeadBox <span class="sm-text-grey">for Chrome</span></h1>
+          </div>
+        </div> <!--end columns-->
+
+        <div class="container-interactive">
+          <input class="input input-search" id="search-el" type="text" placeholder="Search">
+          <input class="input" id="input-el" type="text" placeholder="Type your lead's name or click SAVE TAB to scan page">
+          <button class="btn first-btn" id="input-btn">SAVE INPUT</button>
+          <button class="btn first-btn" id="tab-btn">SAVE TAB</button>
+          <button class="btn second-btn" id="delete-btn">DELETE ALL</button>
         </div>
-        <div class="brand-container">
-          <h1>LeadBox <span class="sm-text-grey">for Chrome</span></h1>
+      </header>
+
+      <main>
+        <div id="sec-list">
+            <table class="table" id="contact-list-div"></table>
         </div>
-      </div> <!-- end container flex -->
 
-      <div class="container">
-        <input class="input input-search" id="search-el" type="text" placeholder="Search">
-        <input class="input" id="input-el" type="text" placeholder="Type your lead's name or click SAVE TAB to scan page">
-        <button class="first-btn" id="input-btn">SAVE INPUT</button>
-        <button class="first-btn" id="tab-btn">SAVE TAB</button>
-        <button class="second-btn" id="delete-btn">DELETE ALL</button>
-      </div>
-    </header>
-
-
-
-    <section id="sec-list">
-      <div class="container">
-        <table class="table" id="contact-list-div"></table>
-      </div>
-    </section>
-
-
-
-
-    <section class="text-center">
-      <div class="element-center" id="footer-div">
-        <p>
-          Finding LeadBox useful? <br>
-          Help us make it even more powerful! <br>
-          Consider making a Donation 🙂
-        </p>
-        <button id="donate-btn">DONATE</button>
-      </div>
-    </section>
+        <div class="donate hidden" id="footer-div">
+          <p class="cta">
+            Finding LeadBox useful? <br>
+            Help us make it even more powerful! <br>
+            Consider making a Donation 🙂
+          </p>
+          <a href="https://www.paypal.com/paypalme/NandoDev?locale.x=en_US" target="_blank" class="btn" id="donate-btn">
+            DONATE</a>
+        </div>
+      </main>
+    </div> <!--end principal container -->
 
     <script src="index.js">  </script>
     <script src="frontend/delete.js">  </script>
