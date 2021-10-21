@@ -21,11 +21,16 @@
         </div> <!--end columns-->
 
         <div class="container-interactive">
-          <input class="input input-search" id="search-el" type="text" placeholder="Search">
-          <input class="input" id="input-el" type="text" placeholder="Type your lead's name or click SAVE TAB to scan page">
-          <button class="btn first-btn" id="input-btn">SAVE INPUT</button>
-          <button class="btn first-btn" id="tab-btn">SAVE TAB</button>
-          <button class="btn second-btn" id="delete-btn">DELETE ALL</button>
+          <div class="input-container">
+            <input class="input search" id="search-el" type="text" placeholder=" 🔍 ">
+          </div>
+          <div class="input-container">
+            <input class="input col-50" id="input-url" type="text" placeholder="https://www.SomeLead.com">
+            <input class="input col-50" id="input-phones" type="text" placeholder="phones (comma-separate)">
+          </div>
+          <button class="btn" id="input-btn">SAVE INPUT</button>
+          <button class="btn" id="tab-btn">SAVE TAB</button>
+          <button class="btn btn-second" id="delete-btn">DELETE ALL</button>
         </div>
       </header>
 
@@ -45,6 +50,17 @@
         </div>
       </main>
     </div> <!--end principal container -->
+
+    <div class="overlay hidden" id="overlay-delete">
+      <div class="modal" id="modal-delete">
+        <p class="modal-warning">Warning ⛔️</p>
+        <p>This action will delete all your leads</p>
+        <div class="modal-btns-container">
+          <button class="btn btn-second" id="modal-delete-cancel">Cancel</button>
+          <button class="btn btn-danger" id="modal-delete-delete">Delete</button>
+        </div>
+      </div>
+    </div>
 
     <script src="index.js">  </script>
     <script src="frontend/delete.js">  </script>
